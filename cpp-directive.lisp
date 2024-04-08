@@ -89,6 +89,19 @@
 	(values acc state)
 	(apply #'/many* nstate parser acc parser-args))))
 
+#+nil
+(progn
+  (defvar *do-print-/many** nil)
+  (defun /many*
+      (state parser &optional (acc (makeq 'cpp-token)) &rest parser-args)
+    (multiple-value-bind (result nstate) (apply parser state acc parser-args)
+      (when (eq *do-print-/many** parser)
+	(print `(:@@@@@@@@@@@@@@@@ /many*
+		 :state==> ,state :result==> ,result :nstate==> ,nstate)))
+      (if (null result)
+	  (values acc state)
+	  (apply #'/many* nstate parser acc parser-args)))))
+
 (defmacro !token (parser)
   `#'(lambda (state acc)
        (multiple-value-bind (result nstate) (/token state #',parser acc)

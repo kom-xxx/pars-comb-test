@@ -58,3 +58,7 @@
       (let* ((l (length vin))
 	     (vs (sb-ext:array-storage-vector vin)))
 	(subseq vs 0 l))))
+
+(declaim (ftype (function (hash-table &optional stream) null) dump-hash))
+(defun dump-hash (ht &optional (stream *standard-output*))
+  (maphash (lambda (k v) (print `(,k ,v) stream)) ht))

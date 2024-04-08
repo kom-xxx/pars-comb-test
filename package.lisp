@@ -36,7 +36,7 @@
   (:nicknames :cs-utils)
   (:use :cl :cs-deftype)
   (:export :char-equal* :makeq :cmakeq :enq :cenq :strcat :tail
-	   :to-simple-string))
+   :to-simple-string :dump-hash))
 
 #+nil
 (defpackage memoize
@@ -138,7 +138,7 @@
 (defpackage :cpp-directive
   (:use :cl :cs-deftype :cs-utils :cs-parser :cpp-lex :c-expr)
   (:export
-   :/many :/many* :=cpp-file :=/parse-cpp-directive
+   :/many :/many* :do-print-/many* :=cpp-file :=/parse-cpp-directive
    :cpp-cond-props :cpp-cond-value :cpp-cond-attr :cpp-cond-spaces
    :cpp-cond-state :cpp-cond-next :cpp-cond-file :cpp-cond-line
    :cpp-cond-colmn :cpp-cond-test
@@ -153,7 +153,7 @@
    :c-declaration :decl-props :decl-value :decl-body
    :c-array-index :cai-props :cai-value :cai-index
    :c-statement :stmt-props :stmt-value :stmt-body
-   :c-func-declaration :func-props :func-value :func-s[ec :func-oarg
+   :c-func-declaration :func-props :func-value :func-spec :func-decl :func-oarg
    :/!translation-unit))
 
 (defpackage :c-analyser

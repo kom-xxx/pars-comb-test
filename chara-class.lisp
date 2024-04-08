@@ -57,4 +57,3 @@
   (mkcc-test hex? +hexa-mask+)
   (mkcc-test ctl? +control-mask+)
   (mkcc-test dec1st? +dec1st-mask+))
-
