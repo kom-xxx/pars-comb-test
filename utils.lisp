@@ -59,6 +59,16 @@
 	     (vs (sb-ext:array-storage-vector vin)))
 	(subseq vs 0 l))))
 
-(declaim (ftype (function (hash-table &optional stream) null) dump-hash))
-(defun dump-hash (ht &optional (stream *standard-output*))
-  (maphash (lambda (k v) (print `(,k ,v) stream)) ht))
+(declaim (ftype (function (hash-table &optional string stream) null) dump-hash))
+(defun dump-hash (ht &optional (label "") (stream *standard-output*))
+  (let ((acc nil))
+    (maphash (lambda (k v) (push `(,k ,v) acc)) ht)
+    (when (string/= label "")
+      (push (make-symbol (format nil "~A==>" (string-upcase label))) acc))
+    (print acc stream)
+    nil))
+
+
+(defmacro dump-hash* (ht &optional (stream *standard-output*))
+  (let ((ht-name (symbol-name ht)))
+    `(dump-hash ,ht ,ht-name ,stream)))

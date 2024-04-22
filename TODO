@@ -1,0 +1,16 @@
+statement.lisp
+==>
+struct s1 *fn0(long, int, int[]);
+
+==>
+typedef struct s0 {
+	volatile t0 *(*search_fn)(int [], int []);
+} s0_t;
+
+==> direct-abstract-declarator problem
+(int (*)(int, int), strunct x *)
+
+analyser.lisp
+==> POINTER SPEC PROBREM
+long vec [][];
+long vec_cache(int x, int *const (*)(int, int));

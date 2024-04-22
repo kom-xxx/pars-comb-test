@@ -1207,3 +1207,8 @@
 	  (ecase (cpp-token-props (expr-value expr))
 	    (:c-punctuator-lsh (ash lhs rhs))
 	    (:c-punctuator-rsh (ash lhs (- rhs))))))))))
+
+(defun-memo eval-constant-expr (expr)
+  (if (typep expr 'cpp-token)
+      (cpp-token-value expr)
+      (cpp-eval-expr expr)))

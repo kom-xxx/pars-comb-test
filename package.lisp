@@ -36,7 +36,7 @@
   (:nicknames :cs-utils)
   (:use :cl :cs-deftype)
   (:export :char-equal* :makeq :cmakeq :enq :cenq :strcat :tail
-   :to-simple-string :dump-hash))
+   :to-simple-string :dump-hash :dump-hash*))
 
 #+nil
 (defpackage memoize
@@ -88,7 +88,7 @@
   (:use :cl :cs-deftype :cs-utils :cs-parser :cpp-lex)
   (:export
    :c-expression :expr-props :expr-value :expr-lhs :expr-rhs
-   :token-input :cpp-eval-expr
+   :token-input :cpp-eval-expr :eval-constant-expr
    :/$abstract-declarator :/$additive-expression :/$alignment-specifier
    :/$argument-expression-list :/$assignment-expression
    :/$atomic-type-specifier :/$bitand-expression :/$bitior-expression
@@ -153,7 +153,7 @@
    :c-declaration :decl-props :decl-value :decl-body
    :c-array-index :cai-props :cai-value :cai-index
    :c-statement :stmt-props :stmt-value :stmt-body
-   :c-func-declaration :func-props :func-value :func-spec :func-decl :func-oarg
+   :c-func-declaration :func-props :func-value :func-spec :func-body :func-oarg
    :/!translation-unit))
 
 (defpackage :c-analyser

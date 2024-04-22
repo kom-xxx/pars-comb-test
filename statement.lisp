@@ -115,6 +115,8 @@
 (defun />declaration-specifiers (state)
   (dprint state  '/>declaration-specifier)
   (.do ((list (/!many-enq state #'/>declaration-specifier)))
+    #+nil
+    (print `(:%%%%%%%% />declaration-specifier :@ 0 :list==> ,list))
     (return-decl :c-decl-declaration-specifiers list nil nstate)))
 
 (defun />declaration-specifier (state)
@@ -524,7 +526,8 @@
 (defun />array-index (state acc)
   (dprint state   '/>array-index)
   (flet ((fn-ret (value body index nstate)
-	   (let ((decl (mkcai :value value :body body :index index)))
+	   (let ((decl (mkcai :props :c-decl-array-index
+			      :value value :body body :index index)))
 	     (when acc
 	       (enq decl acc))
 	     (values decl nstate))))
@@ -538,16 +541,19 @@
 	  (.do ((qual (/>type-qualifier-list state))
 		(static (//static nstate))
 		(assign (/$assignment-expression nstate)))
-	    (fn-ret qual static assign nstate))
+	    (fn-ret static qual assign nstate))
+	  (.do ((qual (/>type-qualifier-list state))
+		(assign (/$assignment-expression nstate)))
+	    (fn-ret nil qual assign nstate))
 	  (.do ((qual (/>type-qualifier-list state))
 		(star (//mul nstate)))
-	    (fn-ret qual nil star nstate))	
+	    (fn-ret nil qual star nstate))	
 	  (.do ((star (//mul state)))
 	    (fn-ret nil nil star nstate))
 	  (.do ((assign (/$assignment-expression state)))
 	    (fn-ret nil nil assign nstate))
 	  (.do ((qual (/>type-qualifier-list state)))
-	    (fn-ret qual nil nil nstate)))))
+	    (fn-ret nil qual nil nstate)))))
 
 (defun />fun-proto (state acc)
   (dprint state  '/>fun-proto)
@@ -594,44 +600,84 @@
   (.any (.do ((list (/>parameter-list state))
 	      (comma (//comma nstate))
 	      ($... (//three-dots nstate)))
+	  #+nil
+	  (print `(:%%%%%%%% />parameter-type-list :@ 1
+		   :list==> , list :...=> ,$...))
 	  (return-decl :c-parameter-type-list list $... nstate))
 	(.do ((list (/>parameter-list state)))
+	  #+nil
+	  (print `(:%%%%%%%% />parameter-type-list :@2 :list==> ,list))
 	  (return-decl :c-parameter-type-list list nil nstate))))
 
 (defun />parameter-list (state &optional (acc (makeq 'c-declaration)))
   (dprint state  '/>parameter-list)
   (.any (.do ((first (/>parameter-declaration state acc))
 	      (rest  (/>parameter-list-rest nstate acc)))
+	  #+nil
+	  (print `(:%%%%%%%% />parameter-list-rest :@ 0 :acc==> ,acc))
 	  (return-decl :c-decl-parameter-list acc nil nstate))
 	(.do ((first (/>parameter-declaration state acc)))
+	  #+nil
+	  (print `(:%%%%%%%% />parameter-list-rest :@ 1 :acc==> ,acc))
 	  (return-decl :c-decl-parameter-list acc nil nstate))))
 
 (defun />parameter-list-rest (state acc)
   (dprint state  '/>parameter-list-rest)
-  (/many* state #'/>parameter-list-rest-ent acc))
+  #+nil
+  (/many* state #'/>parameter-list-rest-ent acc)
+  #-nil
+  (progn
+    #+nil
+    (setf cpp-directive::*print-/many** t)
+    (multiple-value-bind (result nstate)
+	(/many* state #'/>parameter-list-rest-ent acc)
+      #+nil
+      (setf cpp-directive::*print-/many** nil)
+      (values result nstate))))
+    
 
 (defun />parameter-list-rest-ent (state acc)
   (.do ((comma (//comma state))
 	(param (/>parameter-declaration nstate acc)))
     #+nil
-    (print `(/>parameter-list-rest-ent
-	     ,param ,(aref (is-i nstate) (is-o nstate))))
+    (print `(:%%%%%%%% />parameter-list-rest-ent :@ 1 :param==> ,param))
     (let* ((val (decl-value param))
 	   (vec (decl-value val)))
+      #+nil
+      (print `(:%%%%%%%% />parameter-list-rest-ent :@ 2
+	       :val==> ,val :vec==> ,vec :lengyh.vec==> ,(length vec)))
       (if (= (length vec) 0)
-	  (values nil nil)
-	  (values param nstate)))))
+	  (progn
+	    #+nil
+	    (print `(:>>>>>>>>>>>>>>>> (values ,nil ,nil)))
+	    (values nil nil))
+	  (progn
+	    #+nil
+	    (print `(:>>>>>>>>>>>>>>>> (values ,param ,nstate)))
+	    (values param nstate))))))
 
 (defun />parameter-declaration (state acc)
   (dprint state  '/>parameter-declaration)
+  #+nil
+  (print `(:%%%%%%%% />parameter-declaration :@ :<<<< :state==> ,state))
   (.any (.do ((spec (/>declaration-specifiers state))
 	      (decl (/>declarator nstate)))
+	  #+nil
+	  (print `(:%%%%%%%% />parameter-declaration :@ 0))
 	  (return-decl-enq :c-decl-parameter-declaration spec decl nstate acc))
 	(.do ((spec (/>declaration-specifiers state))
 	      (decl (/>abstract-declarator nstate)))
+	  #+nil
+	  (print `(:%%%%%%%% />parameter-declaration :@ 1))
 	  (return-decl-enq :c-decl-parameter-declaration spec decl nstate acc))
 	(.do ((spec (/>declaration-specifiers state)))
-	  (return-decl-enq :c-decl-parameter-declaration spec nil nstate acc))))
+	  #+nil
+	  (print `(:%%%%%%%% />parameter-declaration :@ 2 :spec==> ,spec))
+	  (let ((val (decl-value spec)))
+	    (if (= (length val) 0)
+		(values nil nil)
+		(return-decl-enq :c-decl-parameter-declaration
+				 spec nil nstate acc))))))
 
 (defun />identifier-list (state &optional (acc (makeq 'c-declaration)))
   (.any (.do ((ident (//identifier* state))
@@ -986,15 +1032,15 @@
 	  (return-stmt :c-stmt-iteration-statement-for
 		       (list expr0 expr1 expr2) stmt nstate))
 	(.do (($for (//for state))
-		(lparen (//lparen nstate))
-		(decl (/>declaration nstate))
-		(expr0 ($/?  nstate #'/$expression))
-		(semi0 (//semicolon nstate))
-		(expr1 ($/? nstate #'/$expression))
-		(semi1 (//semicolon nstate))
-		(stmt (/!statement nstate)))
+	      (lparen (//lparen nstate))
+	      (decl (/>declaration nstate))
+	      (expr0 ($/?  nstate #'/$expression))
+	      (semi0 (//semicolon nstate))
+	      (expr1 ($/? nstate #'/$expression))
+	      (rparen (//rparen nstate))
+	      (stmt (/!statement nstate)))
 	  (return-stmt :c-stmt-iteration-statement-for
-		       (list (list decl expr0) expr1) stmt nstate))))
+		       (list decl expr0 expr1) stmt nstate))))
 
 (defun /!jump-statement (state)
   (dprint state  '/!jump-statement)
@@ -1036,8 +1082,13 @@
       nil))
 
 (defun register-typedef (name-decl spec)
-  (let ((name
-	  (cpp-token-value (decl-value (decl-body (decl-value name-decl))))))
+  #+nil
+  (print `(:========= register-typedef :@ :<<<< :name-decl==> ,name-decl))
+  (let* ((token (decl-value (decl-body (decl-value name-decl))))
+	 (name (cpp-token-value token)))
+    #+nil
+    (print `(:========= register-typedef :@ 1 :token==> ,token))
+    (setf (cpp-token-props token) :typedef-name)
     (setf (gethash name *typedef-hash*) spec)))
 
 (defvar *accepted-declarations* (make-array 16 :adjustable t :fill-pointer 0))
@@ -1124,6 +1175,10 @@
        (progn
 	 (print "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
 	 (print `(:>>>> ,(cpp-token-value token))))
+       #+nil
+       (print `(:========= retry-/>struct-declaration-list% :@ :1
+		:token==> ,token))
+       (setf (cpp-token-props token) :typedef-name)
        (setf (gethash (cpp-token-value token) *typedef-hash*)
 	     (make-dummy-entry))
        (retry-/>struct-declaration-list state))
@@ -1261,6 +1316,10 @@
 		  (values decl nstate))))
 	     (t
 	      (let ((token (aref text ident)))
+		#+nil
+		(print `(:========= retry-with-force-typedef :@ 1
+			 :token==> ,token))
+		(setf (cpp-token-props token) :typedef-name)
 		(setf (gethash (cpp-token-value token) *typedef-hash*)
 		      (make-dummy-entry)))
 		(/>declaration state)))))))))
