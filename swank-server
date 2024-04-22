@@ -1,0 +1,17 @@
+#!/bin/sh
+
+memsize=$((`sysctl hw.physmem | sed 's/.*: //'` / 1024 / 1024))
+#memsize=32788
+stacksize=$((${memsize} / 100))
+
+LANG=ja_JP.UTF-8
+export LANG
+
+screen -d -m \
+       sbcl --dynamic-space-size ${memsize} --control-stack-size ${stacksize} \
+	    --load "${HOME}/.elisp/slime/swank-loader" \
+	    --eval '(swank-loader:init)' \
+	    --eval '(let ((*features* (append *features*
+	    	   	 	       sb-impl:+internal-features+)))
+    	    	      (swank:create-server :dont-close t
+                                           :interface "0.0.0.0"))'
