@@ -117,9 +117,10 @@
   (type-list (make-array 1 :adjustable t :fill-pointer 0)))
 
 (defstruct (ac-var-name (:conc-name ac-vname-) (:constructor mkacvname))
-  (type nil :type (or (member (:func-name :func-ptr :var-name)) null))
+  #+nil(type nil :type (or (member (:func-name :func-ptr :var-name)) null))
+  (type nil :type (or keyword null))
   (name "" :type string)
-  (args nil :type (or ac-funarg-list null)))
+  (args nil :type (or ac-funptr null)))
 
 (defstruct (ac-declarator (:conc-name ac-decl-) (:constructor mkacdecl))
   (pointer nil :type (or ac-pointer null))
@@ -627,15 +628,29 @@
   #+nil
   (print `(:@@@@@@@@ parse-declarator* :@ :<<<< :decl==> ,decl))
   (when decl
-    (let* ((ptr (parse-pointer-spec* (decl-value decl)))
-	   (name (decl-body decl))
-	   (token (decl-value name))
-	   (index (parse-suffixes* (decl-body name))))
-      (declare (ignorable ptr name token index))
-      #+nil
-      (print `(:@@@@@@@@ parse-declarator* :@ 1 :ptr==> ,ptr
-	       :name==> ,name :token==> ,token :index==> ,index))
-      (values ptr token index))))
+    (case (decl-props decl)
+      (:c-decl-direct-declaretor
+       (let* ((ptr (parse-pointer-spec* (decl-value decl)))
+	      (name (decl-body decl))
+	      (token (decl-value name))
+	      (index (parse-suffixes* (decl-body name))))
+	 (declare (ignorable ptr name token index))
+	 #+nil
+	 (print `(:@@@@@@@@ parse-declarator* :@ 1 :ptr==> ,ptr
+		  :name==> ,name :token==> ,token :index==> ,index))
+	 (values ptr token index)))
+      (:c-decl-abstract-declarator
+       (print `(:@@@@@@@@ parse-declarator* :@ :c-decl-abstract-declarator
+		:decl==> ,decl))
+       (let* ((ptr (parse-pointer-spec* (decl-value decl)))
+	      (dad (decl-body decl))
+	      (fnptr (parse-pointer-spec* (decl-value (decl-value dad))))
+	      (abs-decl (decl-body dad))
+	      (arg-decl (decl-value abs-decl))
+	      (funarg (parse-suffixes* arg-decl)))
+	 (print `(:@@@@@@@@ parse-declarator* :@ :@1
+		  :ptr==> ,ptr :fnptr==> ,fnptr :funarg==> ,funarg))
+	 (break))))))
 
 (defun parse-parameter-list
     (params want-id &optional
@@ -646,11 +661,12 @@
   #+nil
   (when (null params)
     (error "parse-parameter-list: NULL parameter list given."))
-  #+nil
-  (print `(:@@@@@@@@ parse-parameter-list :@ 0 :params==> ,params))
+  #-nil
+  (print `(:@@@@@@@@ parse-parameter-list :@ :<<<< :params==> ,params))
+  (break)
   (if (>= idx (length params))
       (progn
-	#+nil
+	#-nil
 	(print `(:@@@@@@@@ parse-parameter-list :@ :exit
 		 :length-params==> ,(length params) :idx==> ,idx :acc==> ,acc))
 	acc)
@@ -872,6 +888,7 @@
 		 (tl (make-array 1 :adjustable t :fill-pointer 0))
 		 (ql (make-array 1 :adjustable t :fill-pointer 0)))
   (declare (ignorable idx sc tl ql))
+  #+nil
   (print `(:-------- parse-spec-qual-list* :@ :<<<< :spec-list==> ,spec-list))
   (if (>= idx (length spec-list))
       (values sc tl ql)
@@ -888,50 +905,55 @@
 	   (vector-push-extend decl tl)))
 	(parse-spec-qual-list* spec-list (1+ idx) sc tl ql))))
 
-(defun construct-funptr (decl suffixes)
-  (print `(:++++++++ construct-funptr :@ :<<<<
-	   :decl==> ,decl :suffixes==> ,suffixes))
-  (let* ((funarg (aref suffixes 0))
-	 (indexes (subseq suffixes 1))
-	 (name-decl (decl-body decl))
-	 (name-token (decl-value name-decl)))
-    (print `(:++++++++ construct-funptr :@ 1
-	     :funarg==> ,funarg :indexes==> ,indexes
-	     :name-decl==> ,name-decl :name-token==> ,name-token))
-    (values (mkacvname :type :func-ptr :name (cpp-token-value name-token)
-		       :args funarg)
-	    indexes)))
+(defun construct-fun-arg-list (param-list rest)
+
+  #+nil
+  (print `(:++++++++ construct-fun-arg-list :@ :<<<<
+	   :params-list==> ,param-list :rest==> ,rest))
+  (let* ((type-list (decl-value param-list))
+	 (param-list (decl-value type-list))
+	 (rest-args (decl-body type-list))
+	 (funarg (parse-parameter-list (decl-value param-list) nil)))
+    (mkacfalist :args funarg :rest (not (null rest)))))
 
 (defun parse-funptr-declarator (name-decl suffixes)
+  #+nil
   (print `(:++++++++ parse-funptr-declarator :@ :<<<<
-	   :name-decl==> ,name-decl))
+	   :name-decl==> ,name-decl :suffix==> ,suffixes))
   (unless (eq (decl-props name-decl) :c-decl-declarator)
     (error "parse-funptr-declarator ~S is not :c-decl-declarator" name-decl))
-  (let ((ptr (parse-pointer-spec* (decl-value name-decl)))
-	(token (decl-value (decl-body name-decl)))
-	(funarg (parse-parameter-list nil (aref suffixes 0)))
-	(rest-suffixes (subseq suffixes 1)))
-    (let ((funptr (mkacfptr :ptr ptr :args funarg)))
-      (print `(:++++++++ parse-funptr-declarator :@ 1
-	       :funptr==> ,funptr :rest-suffixes==> ,rest-suffixes))
-      (break)
-      (values token funptr rest-suffixes))))
+  (let* ((ptr (parse-pointer-spec* (decl-value name-decl)))
+	 (token (decl-value (decl-body name-decl)))
+	 (funarg (aref suffixes 0))
+	 (rest-suffixes (subseq suffixes 1))
+	 (funarg (construct-fun-arg-list funarg rest-suffixes))
+	 (fnptr (mkacfptr :ptr ptr :args funarg)))
+    #+nil
+    (print `(:++++++++ parse-funptr-declarator :@ 1 :token==> ,token
+	     :funptr==> ,fnptr :rest-suffixes==> ,rest-suffixes))
+    (values token fnptr rest-suffixes)))
 
 
 (defun parse-declarator (name init)
+  (declare (ignorable init))
   (let ((ptr (parse-pointer-spec* (decl-value name)))
 	(name-spec (decl-body name)))
+    #+nil
     (print `(:++++++++ parse-declarator :@ :<<<<
 	     :ptr==> ,ptr :name-spec==> ,name-spec))
     (unless (eq (decl-props name-spec) :c-decl-direct-declarator)
       (error "parse-declarator ~S is not :c-decl-direct-declarator" name-spec))
     (let ((name-decl (decl-value name-spec)))
-      (print `(:++++++++ parse-declarator :@1 :name-decl==> ,name-decl))
-      (break)
       (typecase name-decl
 	(cpp-token name-decl)
 	(c-declaration
-	 (parse-funptr-declarator name-decl (decl-body name-spec)))
+	 (multiple-value-bind (token fnptr suffixes)
+	     (parse-funptr-declarator name-decl (decl-body name-spec))
+	   (print `(:++++++++ parse-declarator :@ :c-declaration
+		    :name-decl==> ,name-decl
+		    :token==> ,token :fnptr==> ,fnptr :suffixes==> ,suffixes))
+	   (print :%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%)
+	   (break)))
 	(t
 	 (error "unknown declarator type ~S" name-decl))
 	))))

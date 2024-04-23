@@ -1,7 +1,10 @@
 /*int k[8] = {.left .right = NULL};*/
-long *(*fa)(int (*)(int))[8 * 3];
+long *(*fa)(int (*)(int), ...)[8 * 3];
+/*
+long fx(int, int, int);
 int xx;
 int x[8] = {0, 1, 2, 3};
+*/
 /*
 long x0[2*2][2] = {{1, 2}, {3, 4}};
 long x1 = 1;
