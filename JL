@@ -1,0 +1,1 @@
+https://docs.nvidia.com/jetson/archives/r36.2/DeveloperGuide/AR/JetsonSoftwareArchitecture.html
