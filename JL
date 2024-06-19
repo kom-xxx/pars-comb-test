@@ -4,3 +4,4 @@ https://docs.nvidia.com/drive/drive_os_5.1.6.1L/nvvib_docs/index.html#page/DRIVE
 https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/api_reference/index.html
 https://developer.nvidia.com/drive/ecosystem-orin#camera
 file:///home/kom/.xdg/Download/chimera-whitepaper-jp.pdf
+https://developer.nvidia.com/docs/drive/drive-os/6.0.6/public/drive-os-linux-sdk/api_reference/classnvsipl_1_1INvSIPLCamera.html#ab8908aaf6991482b0a67ce2684234e6e
