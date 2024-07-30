@@ -5,3 +5,17 @@ https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-s
 https://developer.nvidia.com/drive/ecosystem-orin#camera
 file:///home/kom/.xdg/Download/chimera-whitepaper-jp.pdf
 https://developer.nvidia.com/docs/drive/drive-os/6.0.6/public/drive-os-linux-sdk/api_reference/classnvsipl_1_1INvSIPLCamera.html#ab8908aaf6991482b0a67ce2684234e6e
+git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+
+nvsci
+
+abstruct
+https://developer.nvidia.com/blog/sharing-cuda-resources-through-interoperability-with-nvscibuf-and-nvscisync/
+
+cuda-interface
+https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#nvidia-software-communication-interface-interoperability-nvsci
+	3.2.16.5
+
+cuda-samples
+https://github.com/NVIDIA/cuda-samples/tree/master/Samples/4_CUDA_Libraries/cudaNvSci
+https://github.com/NVIDIA/cuda-samples/tree/master/Samples/4_CUDA_Libraries/cudaNvSciNvMedia
