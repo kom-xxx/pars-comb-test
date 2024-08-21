@@ -19,3 +19,6 @@ https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#nvidia-software
 cuda-samples
 https://github.com/NVIDIA/cuda-samples/tree/master/Samples/4_CUDA_Libraries/cudaNvSci
 https://github.com/NVIDIA/cuda-samples/tree/master/Samples/4_CUDA_Libraries/cudaNvSciNvMedia
+
+DriveOS 6.0.10
+https://developer.nvidia.com/docs/drive/drive-os/6.0.10/public/drive-os-linux-sdk/index.html
