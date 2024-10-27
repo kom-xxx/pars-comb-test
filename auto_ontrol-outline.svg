@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="420mm"
+   height="297mm"
+   viewBox="0 0 420 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="auto_ontrol-outline.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:lockguides="true"
+     inkscape:zoom="2.2498924"
+     inkscape:cx="575.8053"
+     inkscape:cy="706.25599"
+     inkscape:current-layer="layer1"
+     showguides="false">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.50000001"
+       spacingy="0.49999999"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="10"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="4"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="strokeWidth">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f6ee00;fill-opacity:0.999884;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       id="rect37"
+       width="159.99998"
+       height="5.0000014"
+       x="55"
+       y="120" />
+    <rect
+       style="fill:#f6ee00;fill-opacity:0.443411;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       id="rect2"
+       width="159.99998"
+       height="60"
+       x="55"
+       y="125" />
+    <rect
+       style="fill:#90c100;fill-opacity:0.953078;stroke:#000000;stroke-width:0.0921955;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect35"
+       width="30.000002"
+       height="25.500004"
+       x="180"
+       y="130" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:0.953078;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="194.92944"
+       y="142.04445"
+       id="text36"><tspan
+         sodipodi:role="line"
+         id="tspan36"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+         x="194.92944"
+         y="142.04445">ISP Control</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+         x="194.92944"
+         y="145.57224"
+         id="tspan37">Params</tspan></text>
+    <rect
+       style="fill:#ff9e61;fill-opacity:0.277836;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect32"
+       width="34.000008"
+       height="39"
+       x="73"
+       y="128" />
+    <rect
+       style="fill:#f6ee00;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       id="rect1"
+       width="19.999998"
+       height="4.999999"
+       x="19.999998"
+       y="120" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       x="22.324938"
+       y="123.17875"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#000000;stroke-width:0"
+         x="22.324938"
+         y="123.17875">SIPLQuery</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       x="128.26192"
+       y="123.50754"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#000000;stroke-width:0"
+         x="128.26192"
+         y="123.50754">SIPL API</tspan></text>
+    <rect
+       style="fill:#9ddd5f;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none"
+       id="rect3"
+       width="24.999996"
+       height="5.0000005"
+       x="35.000004"
+       y="110" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none"
+       x="38.16547"
+       y="113.23378"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="fill:#000000;stroke-width:0"
+         x="38.16547"
+         y="113.23378">PlatformCfg</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 29.999997,120 2e-6,-7.5 H 35"
+       id="path3"
+       sodipodi:nodetypes="ccc" />
+    <circle
+       id="path4"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="60.002014"
+       cy="112.04751"
+       r="0.0023657996" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 60.000001,112.50001 h 4.999998 v 7.5"
+       id="path5" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 64.999999,125.00001 v 7.5 h 10.000002"
+       id="path6" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="4.873004"
+       y="118.23378"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="4.873004"
+         y="118.23378">GetPlatformCfg</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="65.760117"
+       y="118.23378"
+       id="text7"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="65.760117"
+         y="118.23378">SetPlatformCfg</tspan></text>
+    <rect
+       style="fill:#ffb175;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7"
+       width="29.999994"
+       height="17.499981"
+       x="75.000008"
+       y="130.00002" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.94528px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       x="79.139282"
+       y="130.55467"
+       id="text8"
+       transform="scale(0.95822092,1.0436007)"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="fill:#000000;stroke-width:0"
+         x="79.139282"
+         y="130.55467">ISP settings</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.94528px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="81.630028"
+       y="133.61673"
+       id="text9"
+       transform="scale(0.95822092,1.0436007)"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="fill:#000000;stroke-width:0"
+         x="81.630028"
+         y="133.61673">AWB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.94528px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="81.639816"
+       y="136.74753"
+       id="text10"
+       transform="scale(0.95822092,1.0436007)"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="fill:#000000;stroke-width:0"
+         x="81.639816"
+         y="136.74753">AE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.94528px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="81.476837"
+       y="139.89062"
+       id="text11"
+       transform="scale(0.95822092,1.0436007)"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="fill:#000000;stroke-width:0"
+         x="81.476837"
+         y="139.89062">Exposure</tspan></text>
+    <rect
+       style="fill:#ff9e61;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect12"
+       width="29.999996"
+       height="17.500004"
+       x="75.000008"
+       y="147.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       x="75.18956"
+       y="152.30856"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="fill:#000000;stroke-width:0"
+         x="75.18956"
+         y="152.30856">DevBlk settings</tspan></text>
+    <rect
+       style="fill:#e67730;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       id="rect13"
+       width="19.999998"
+       height="4.999999"
+       x="30.000002"
+       y="142.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       x="36.578049"
+       y="146.01036"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="fill:#000000;stroke-width:0"
+         x="36.578049"
+         y="146.01036">NITO</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 50,145.00001 25,-6.5"
+       id="path14" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 50.000002,145.00001 25,6.5"
+       id="path15" />
+    <rect
+       style="fill:#00f200;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect15"
+       width="29.999996"
+       height="5.0000005"
+       x="120"
+       y="80.000008" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="124.00742"
+       y="83.22673"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="124.00742"
+         y="83.22673">xxx_plugin.so</tspan></text>
+    <rect
+       style="fill:#99fe8b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect16"
+       width="39.999989"
+       height="5.0000005"
+       x="115"
+       y="95" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="119.77405"
+       y="98.23378"
+       id="text16"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="119.77405"
+         y="98.23378">create_plugin_func</tspan></text>
+    <path
+       style="fill:#99fe8b;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 134.99999,85.000006 v 10"
+       id="path16" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="137.07272"
+       y="88.962837"
+       id="text17"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="137.07272"
+         y="88.962837">dlopen</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="137.07272"
+         y="92.490623"
+         id="tspan18">dlsym</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="137.19"
+       y="103.23378"
+       id="text20"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="137.19"
+         y="103.23378"
+         id="tspan20">create_plugin_funcを呼び出す</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 134.99999,100.00001 v 5"
+       id="path21" />
+    <rect
+       style="fill:#e1f400;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect21"
+       width="39.999989"
+       height="5.0000005"
+       x="115"
+       y="105" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="120.68422"
+       y="108.22672"
+       id="text23"><tspan
+         sodipodi:role="line"
+         id="tspan23"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="120.68422"
+         y="108.22672">AutoControlPlugin</tspan></text>
+    <path
+       style="fill:#e1f400;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 135,110 v 10"
+       id="path23" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="136.13956"
+       y="118.23378"
+       id="text24"><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="136.13956"
+         y="118.23378">RegisterAutoControl</tspan></text>
+    <path
+       style="fill:#e1f400;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 135,125 v 40"
+       id="path24" />
+    <rect
+       style="fill:#e1f400;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect24"
+       width="39.999989"
+       height="15.000003"
+       x="130"
+       y="165" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="131.00191"
+       y="168.2267"
+       id="text25"><tspan
+         sodipodi:role="line"
+         id="tspan25"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="131.00191"
+         y="168.2267">AutoControlPlugin</tspan></text>
+    <rect
+       style="fill:#c7d500;fill-opacity:0.987049;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26"
+       width="32.499996"
+       height="4.99999"
+       x="135"
+       y="172.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="136.01581"
+       y="175.74344"
+       id="text26"><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="136.01581"
+         y="175.74344">Process</tspan></text>
+    <rect
+       style="fill:#c7d500;fill-opacity:0.987049;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect27"
+       width="19.999996"
+       height="5.0000076"
+       x="110.00001"
+       y="147.49998" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:0.987049;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="110.67957"
+       y="150.91887"
+       id="text27"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="110.67957"
+         y="150.91887">InputParams</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.987049;stroke:#000000;stroke-width:0.09759;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 104.99999,145 H 115 v 2.5"
+       id="path28"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="140.89275"
+       y="-109.83631"
+       id="text12"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="stroke-width:0"
+         x="140.89275"
+         y="-109.83631">…</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.987049;stroke:#000000;stroke-width:0.105409;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 105,138 h 20 v 9.5"
+       id="path27"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="-158.60724"
+       y="-109.83631"
+       id="text29"
+       transform="matrix(0,-1,-1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan29"
+         style="stroke-width:0"
+         x="-158.60724"
+         y="-109.83631">…</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.987049;stroke:#000000;stroke-width:0.0942809;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 105,160.50001 h 20 v -8"
+       id="path30" />
+    <path
+       style="fill:none;fill-opacity:0.987049;stroke:#000000;stroke-width:0.0975901;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 104.99999,155.50001 H 115 v -3"
+       id="path31" />
+    <path
+       style="fill:none;fill-opacity:0.987049;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 129.99999,150 h 10 v 22.5"
+       id="path32"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:#c7d500;fill-opacity:0.987049;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect33"
+       width="19.999996"
+       height="4.9999957"
+       x="150"
+       y="147.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:0.987049;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="149.97626"
+       y="150.68581"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="149.97626"
+         y="150.68581">OutputParams</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.277836;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 144.99999,172.399 V 150 H 150"
+       id="path33"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:#f76931;fill-opacity:0.953078;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 107,135 h 73"
+       id="path35"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:0.953078;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="117.0939"
+       y="134.44261"
+       id="text35"><tspan
+         sodipodi:role="line"
+         id="tspan35"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="117.0939"
+         y="134.44261">Create ISP Control Params</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:0.953078;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 170,150 h 10"
+       id="path37" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:0.999884;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       x="60.499992"
+       y="169.5"
+       id="text38"><tspan
+         sodipodi:role="line"
+         id="tspan38"
+         style="fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="60.499992"
+         y="169.5">SIPL subsystem</tspan></text>
+    <rect
+       style="fill:#00f2ff;fill-opacity:0.214391;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       id="rect58"
+       width="99.999992"
+       height="105"
+       x="190"
+       y="5" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       x="196.05832"
+       y="10"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:0"
+         x="196.05832"
+         y="10">#include &lt;dlfcn.h&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="13.527787"
+         id="tspan5">#include &lt;stdio.h&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="17.055574"
+         id="tspan19" /><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="20.583363"
+         id="tspan21">int</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="24.111151"
+         id="tspan22">main(int ac, char **av)</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="27.638939"
+         id="tspan28">{</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="31.166725"
+         id="tspan30">	void *sh_lib;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="34.694515"
+         id="tspan31">	void *fn_ptr;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="38.222301"
+         id="tspan32">	double (*sin)(double);</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="41.750088"
+         id="tspan34">	double pi = 3.141592653589793238462643383279502884L;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="45.277878"
+         id="tspan39">	double pi_2 = 1.570796326794896619231321691639751442L;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="48.805664"
+         id="tspan40" /><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="52.33345"
+         id="tspan41">	sh_lib = dlopen(&quot;libm.so&quot;, RTLD_NOW);</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="55.86124"
+         id="tspan42">	if (sh_lib == NULL) {</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="59.389027"
+         id="tspan43">		fprintf(stderr, &quot;dlopen: %s\n&quot;, dlerror());</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="62.916813"
+         id="tspan44">		return -1;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="66.444603"
+         id="tspan45">	}</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="69.972389"
+         id="tspan46">	fn_ptr = dlsym(sh_lib, &quot;sin&quot;);</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="73.500175"
+         id="tspan47">	if (fn_ptr == NULL) {</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="77.027962"
+         id="tspan48">		fprintf(stderr, &quot;dlsym: %s\n&quot;, dlerror());</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="80.555756"
+         id="tspan49">		return -1;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="84.083542"
+         id="tspan50">	}</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="87.611328"
+         id="tspan51">	sin = (double (*)(double))fn_ptr;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="91.139114"
+         id="tspan52">	printf(&quot;sin(0):	%f\nsin(PI/2):	%f\nsin(PI):	%f\n&quot;,</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="94.666901"
+         id="tspan53">	       sin(0), sin(pi_2), sin(pi));</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="98.194687"
+         id="tspan54">	dlclose(sh_lib);</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="101.72248"
+         id="tspan55" /><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="105.25027"
+         id="tspan56">	return 0;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="108.77805"
+         id="tspan57">}</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0"
+         x="196.05832"
+         y="112.30584"
+         id="tspan58" /></text>
+    <rect
+       style="fill:#00f2ff;fill-opacity:0.214391;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       id="rect74"
+       width="124.99999"
+       height="65"
+       x="65"
+       y="5" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9"
+       x="66.226692"
+       y="9.0644646"
+       id="text59"><tspan
+         sodipodi:role="line"
+         id="tspan59"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="9.0644646">/*</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="12.592252"
+         id="tspan60">dlopen(), dlsym(), dlclose:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="16.333052"
+         id="tspan61">    動的にshared libraryをloadしライブラリー内のsymbolをlinkする機能</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="19.86084"
+         id="tspan62">    void *dlopen(char *parh, int mode)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="23.601639"
+         id="tspan63">        pathで指定されるshared libraryを主記憶にロードしアクセス用のハンドルを返す</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="27.129427"
+         id="tspan64">    void *dlsym(void *habdle, char *symbol)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="30.870226"
+         id="tspan65">        handleで指定されたshared libraryからsymbolを検索し, そのアドレスを返す</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="34.398014"
+         id="tspan66">    int dlclose(void *handle)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="38.138813"
+         id="tspan67">        handleで指定されたshared libraryを主記憶から削除する</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="41.879612"
+         id="tspan68">        dlclose()呼び出し以降はdlsym()で取得したアドレスへのアクセスは保証されない</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="45.620411"
+         id="tspan78">    linuxの場合, コンパイル時に-ldlを指定する必要がある(QNXは未調査).</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="49.36121"
+         id="tspan81">                     このサンプルの場合, コンパイル時に-lmを指定して数学ライブラリをlinkせずに</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="53.102009"
+         id="tspan77">        sin関数を計算している.</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="56.842808"
+         id="tspan79">    詳細はlinuxのマニュアルページdlopen(3)を参照</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="60.370598"
+         id="tspan73" /><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="64.111397"
+         id="tspan76">    このコードは &quot;cc sample.c -o sample -ldl&quot; を実行することでコンパイルできる</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="67.639183"
+         id="tspan75">*/</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0"
+         x="66.226692"
+         y="71.166969"
+         id="tspan74" /></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#00db3c;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#Triangle)"
+       d="M 148.86266,88.045559 197.45978,51.751816"
+       id="path74"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#00db3c;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#Triangle)"
+       d="m 148.97064,91.79742 48.4365,-22.464955"
+       id="path75"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#00db3c;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#Triangle)"
+       d="m 182.36467,102.80018 25.62836,-8.925935"
+       id="path76"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#00db3c;stroke-width:0.1;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#Triangle)"
+       d="M 182.60833,102.71532 197.68821,87.50461"
+       id="path79" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       d="M 35.000003,199.99998 H 45.000004"
+       id="path86" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       d="M 45.000004,194.99998 H 150"
+       id="path87" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2004;stroke-dasharray:none"
+       d="m 35.000003,199.99998 h 10.000001 v -5 H 155 v 5 l 15,1e-5"
+       id="path88"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 35.000003,199.99998 h 10.000001 v -5 H 155 v 5 l 15,1e-5"
+       id="path89"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 35.000001,209.99999 12.500005,-1e-5 v -5 H 157.5 v 5 l 15,1e-5"
+       id="path90"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 35.000001,219.99999 35.000004,-1e-5 v -5 H 180 v 5 l 15,1e-5"
+       id="path91"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none"
+       d="M 45.000002,199.99998 V 227.5"
+       id="path92"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none"
+       d="m 47.500005,209.83757 -3e-6,17.66243"
+       id="path93"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none"
+       d="M 70.000002,219.99998 V 227.5"
+       id="path94"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2004;stroke-dasharray:none"
+       d="m 170,199.99998 v -5 h 55"
+       id="path95" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 170,199.99998 v -5 h 55"
+       id="path96" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 172.5,209.99998 v -5 H 225"
+       id="path97"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 195,219.99999 v -5 h 30"
+       id="path98"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="13.303678"
+       y="199.32266"
+       id="text98"><tspan
+         sodipodi:role="line"
+         id="tspan98"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="13.303678"
+         y="199.32266">DES output</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="13.303678"
+       y="209.32266"
+       id="text99"><tspan
+         sodipodi:role="line"
+         id="tspan99"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="13.303678"
+         y="209.32266">ICP output</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="13.303678"
+       y="219.32266"
+       id="text100"><tspan
+         sodipodi:role="line"
+         id="tspan100"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="13.303678"
+         y="219.32266">ISP output</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       d="m 42.499999,222.99999 h 2.5"
+       id="path100" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;marker-start:url(#Triangle)"
+       d="m 47.443788,223.49999 c 0,0 3.000002,0 2.5,0"
+       id="path101" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;marker-start:url(#Triangle)"
+       d="m 45.056214,223.49999 c 0,0 -3.000002,0 -2.5,0"
+       id="path102" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none"
+       x="51"
+       y="224.49998"
+       id="text102"><tspan
+         sodipodi:role="line"
+         id="tspan102"
+         style="stroke-width:0.1;stroke-dasharray:none"
+         x="51"
+         y="224.49998" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="50.5"
+       y="224.49998"
+       id="text103"><tspan
+         sodipodi:role="line"
+         id="tspan103"
+         style="stroke-width:0;stroke-dasharray:none"
+         x="50.5"
+         y="224.49998">T<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan104">dcd</tspan></tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;marker-start:url(#Triangle);marker-end:url(#Triangle)"
+       d="M 47.5,225.99999 H 70.000002"
+       id="path104" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="59.5"
+       y="228.99998"
+       id="text105"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0;stroke-dasharray:none"
+         x="59.5"
+         y="228.99998"
+         id="tspan107">T<tspan
+   style="font-size:65%;baseline-shift:sub;stroke-width:0;stroke-dasharray:none"
+   id="tspan106">csd</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="85.012207"
+       y="224.21614"
+       id="text110"><tspan
+         sodipodi:role="line"
+         id="tspan110"
+         style="stroke-width:0;stroke-dasharray:none"
+         x="85.012207"
+         y="224.21614">T<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan109">dcd</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="85.151405"
+       y="229.21614"
+       id="text112"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0;stroke-dasharray:none"
+         x="85.151405"
+         y="229.21614"
+         id="tspan112">T<tspan
+   style="font-size:65%;baseline-shift:sub;stroke-width:0;stroke-dasharray:none"
+   id="tspan111">csd</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="92.302444"
+       y="224.14488"
+       id="text113"><tspan
+         sodipodi:role="line"
+         id="tspan113"
+         style="stroke-width:0"
+         x="92.302444"
+         y="224.14488">DES to ICP delay</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="92.18956"
+       y="229.22672"
+       id="text114"><tspan
+         sodipodi:role="line"
+         id="tspan114"
+         style="stroke-width:0"
+         x="92.18956"
+         y="229.22672">ICP to ISP delay</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="temp"
+     style="display:none">
+    <rect
+       style="fill:#c7d500;fill-opacity:0.399329;stroke:#000000;stroke-width:0;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       id="rect79"
+       width="135"
+       height="59.999989"
+       x="220"
+       y="120" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="222.80521"
+       y="124.99999"
+       id="text83"><tspan
+         sodipodi:role="line"
+         id="tspan83"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="222.80521"
+         y="124.99999">おそらくISPの出力バッファが切り替わったタイミングで呼ばれる</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="222.80521"
+         y="128.7408"
+         id="tspan85">ここで実行した処理結果は次のframeで参照される</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="222.80521"
+         y="132.26859"
+         id="tspan86" /></text>
+  </g>
+</svg>
