@@ -22,3 +22,5 @@ https://github.com/NVIDIA/cuda-samples/tree/master/Samples/4_CUDA_Libraries/cuda
 
 DriveOS 6.0.10
 https://developer.nvidia.com/docs/drive/drive-os/6.0.10/public/drive-os-linux-sdk/index.html
+
+ffmpeg -pix_fmt nv12 -s 1920x1080 -r 1/1 -i ./_cam_0_out_1.yuv './_cam_0_out_1.png/out_%d.png'
